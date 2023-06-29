@@ -30,3 +30,8 @@ app.post("/check-account/", async (req, res)) => {
 1. Kyrgys Post - Javascript developer (August 2022 - present)
 2. Invescore - It specialist(March 2021 - June 2022)
 3. ISP Aknet - technical support(December 2016 - February 2021)
+## 7: Education
+* Offline courses (CodifyLab) on Javascript programming
+* University of KGUSTA (specialty - Information security)
+## 8: English Level
+* A1+
