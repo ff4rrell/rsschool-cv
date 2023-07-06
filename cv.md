@@ -33,5 +33,5 @@ app.post("/check-account/", async (req, res)) => {
 ## 7: Education
 * Offline courses (CodifyLab) on Javascript programming
 * University of KGUSTA (specialty - Information security)
-## 8: English Level
+## 8: English
 * A1+
