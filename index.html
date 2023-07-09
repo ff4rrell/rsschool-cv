@@ -3,26 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <title>CV-NAZARBEKOV</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__menu">
                 <div class="header__logo">
-                    <img src="./img/nazarbekov.jpg" alt="my-foto">
+                    <a href="#header"><img src="./img/nazarbekov.jpg" alt="author photov"></a>
                 </div>
                 <nav class="header__nav nav">
                     <ul class="nav__list">
-                        <li class="nav__link"></li>
-                        <li class="nav__link"></li>
-                        <li class="nav__link"></li>
-                        <li class="nav__link"></li>
+                        <li><a href="#about-me" class="nav__link">About me</a></li>
+                        <li><a href="#contacts" class="nav__link">Contacts</a></li>
+                        <li><a href="#skills" class="nav__link">Skills</a></li>
+                        <li><a href="#code-examples" class="nav__link">Code examples</a></li>
+                        <li><a href="#experience" class="nav__link">Experience</a></li>
+                        <li><a href="#education" class="nav__link">Education</a></li>
+                        <li><a href="#languages" class="nav__link">Languages</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+    <main class="main">
+        <div class="container">
+            <section class="about-me" id="about-me">
+                <div class="about-me__title title">About me</div>
+                <div class="about-me__main">
+                    <div class="about-me__my-photo">
+                        <img src="./img/nazarbekov.jpg" alt="author photo">
+                    </div>
+                    <div class="about-me__information information">
+                        <div class="information__title">
+                            Full name: Saiakbai Nazarbekov
+                        </div>
+                        <div class="information__main">
+                            My name is Saiakbai! I am a Javascript Developer, before programming I worked in technical support, so I am familiar with the basics of computer networking.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <div class="contacts__title title">Contacts</div>
+                <div class="contacts__main">
+                    <ul class="contacts__list">
+                        <li>
+                            Email:
+                            <a href="mailto:ff4rrell@gmail.com" target="_blank" class="contacts__link">
+                                ff4rrell@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            Linkedin:
+                            <a href="https://www.linkedin.com/in/saiakbai-nazarbekov-b86554195/" target="_blank" class="contacts__link">
+                                Saiakbai Nazarbekov
+                            </a>
+                        </li>
+                        <li>
+                            GitHub:
+                            <a href="https://github.com/ff4rrell" target="_blank" class="contacts__link">
+                                ff4rrell
+                            </a>
+                        </li>
+                        <li>Messenger:</li>
+                        <ol>
+                            <li>
+                                Telegram: 
+                                <a href="https://t.me/ff4rrell" target="_blank" class="contacts__link">
+                                    ff4rrell
+                                </a>
+                            </li>
+                            <li>
+                                Whatsapp
+                                <a href="https://wa.me/996700771381" target="_blank" class="contacts__link">
+                                    996700771381
+                                </a>
+                            </li>
+                        </ol>
+                    </ul>
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <div class="skills__title title">Skills</div>
+                <div class="skills__main">
+                    <ul class="skills__list">
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>Nodes JS</li>
+                        <li>Express JS</li>
+                        <li>Ms SQL</li>
+                        <li>React JS</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="code-examples" id="code-examples">
+                <div class="code-examples__title title">Code Examples</div>
+                <div class="code-examples__main">
+                    <code>
+                        <div>app.post("/check-account/", async (req, res)) => {</div>
+                            <div class="code-examples__main-space">const clientAccount = req.body.account;</div>
+                            <div class="code-examples__main-space">const id = req.query.id;</div>
+                            <div class="code-examples__main-space">
+                                const responceFromRequestToMyServer = await requestToMyServer(id, clientAccount);
+                            </div>
+                            <div class="code-examples__main-space">res.send(responceFromRequestToMyServer);</div>
+                          <div>}</div>
+                    </code>
+                </div>
+            </section>
+            <section class="experience" id="experience">
+                <div class="experience__title title">Experience</div>
+                <div class="experience__main">
+                    <ul class="experience__list">
+                        <li class="experience__list__title">Kyrgys Post - Javascript developer (August 2022 - present)</li>
+                        <div class="experience__list__main">
+                            <div class="experience__list__main-position">Position: JavaScript developer</div>
+                            <div class="experience__list__main-description">
+                                <div class="experience__list__main-description__title">Responsibilities</div>
+                                I wrote the front-end part in pure HTML/CSS/JS because the program in which the browser opens doesn't support ES6 and so on. For requests, I'm using XHR. For the back-end part, I used Express.js, and for requests, I'm using Axios. I used JSON and XML in the requests depending on the service provider. I stored passwords and URLs in an env file. During the runtime, I used PostgreSql and MS SQL as databases. I also wrote some data to text files for logging purposes.
+                                <ol class="experience__list__main-description__list-of-stack" >
+                                    <li>NodeJs (ExpressJS)</li>
+                                    <li>Axios, XHR</li>
+                                    <li>REST API (XML/JSON)</li>
+                                    <li>PostgreSQL, MS SQL</li>
+                                    <li>Git</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <li class="experience__list__title">Invescore - It specialist(March 2021 - June 2022)</li>
+                        <div class="experience__list__main">
+                            <div class="experience__list__main-position">Position: Senior Specialist of the Information Technology Department</div>
+                            <div class="experience__list__main-description">
+                                <div class="experience__list__main-description__title">Responsibilities</div>
+                                Configuration and management of network equipment.
+                                Support, administration, and ensuring uninterrupted operation of the company's IT infrastructure.
+                                Monitoring and controlling unauthorized activity by internal users.
+                                Administration of Windows and Linux operating systems, including installation and configuration.
+                                Working with the Zabbix monitoring system.
+                                Access control and user account management in the corporate (computer) network.
+                                Working with Active Directory.
+                            </div>
+                        </div>
+                        <li class="experience__list__title">ISP Aknet - technical support(December 2016 - February 2021)</li>
+                        <div class="experience__list__main">
+                            <div class="experience__list__main-position">Position</div>
+                            <div class="experience__list__main-description">
+                                <div class="experience__list__main-description__title">Responsibilities</div>
+                                Detection of network issues (port errors, drops, loops, floods). Providing consultations to subscribers and employees.
+                                Remote connection to switches and workstations.
+                                Working with active network equipment (Cisco).
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+            <section class="education" id="education">
+                <div class="education__title title">Education</div>
+                <div class="education__main">
+                    <ul class="education__list">
+                        <li>Offline courses (CodifyLab) on Javascript programming</li>
+                        <li>University of KGUSTA (specialty - Information security)</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="languages" id="languages">
+                <div class="languages__title title">
+                    Languages
+                </div>
+                <div class="languages__main">
+                    <ul class="languages__list">
+                        <li>Kyrgyz - Native</li>
+                        <li>Russian - Native</li>
+                        <li>English - A1+</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__items">
+                <div class="footer__title">© Saiakbai Nazarbekov</div>
+                <div class="footer__main">
+                    <a href="https://rs.school/js/" class="footer__link">
+                        <img src="./img/rs_school_js.svg" alt="url course javaScript" class="footer__img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
