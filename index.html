@@ -17,17 +17,24 @@
         <div class="container">
             <div class="header__menu">
                 <div class="header__logo">
-                    <a href="#header"><img src="./img/nazarbekov.jpg" alt="author photov"></a>
+                    <a href="#">
+                        <img src="./img/logo.jpg" alt="author photov">
+                    </a>
                 </div>
-                <nav class="header__nav nav">
+                <button class="header__burger-btn" id="burger-btn">
+                    <span id="span-one"></span>
+                    <span id="span-two"></span>
+                    <span id="span-three"></span>
+                </button>
+                <nav class="header__nav nav" id="nav">
                     <ul class="nav__list">
-                        <li><a href="#about-me" class="nav__link">About me</a></li>
-                        <li><a href="#contacts" class="nav__link">Contacts</a></li>
-                        <li><a href="#skills" class="nav__link">Skills</a></li>
-                        <li><a href="#code-examples" class="nav__link">Code examples</a></li>
-                        <li><a href="#experience" class="nav__link">Experience</a></li>
-                        <li><a href="#education" class="nav__link">Education</a></li>
-                        <li><a href="#languages" class="nav__link">Languages</a></li>
+                        <li><a href="#about-me"  class="nav__link" onclick="scrollMenu()">About me</a></li>
+                        <li><a href="#contacts" class="nav__link" onclick="scrollMenu()">Contacts</a></li>
+                        <li><a href="#skills" class="nav__link" onclick="scrollMenu()">Skills</a></li>
+                        <li><a href="#code-examples" class="nav__link" onclick="scrollMenu()">Code examples</a></li>
+                        <li><a href="#experience"  class="nav__link" onclick="scrollMenu()">Experience</a></li>
+                        <li><a href="#education" class="nav__link" onclick="scrollMenu()">Education</a></li>
+                        <li><a href="#languages" class="nav__link" onclick="scrollMenu()">Languages</a></li>
                     </ul>
                 </nav>
             </div>
@@ -36,7 +43,7 @@
     <main class="main">
         <div class="container">
             <section class="about-me" id="about-me">
-                <div class="about-me__title title">About me</div>
+                <h2 class="about-me__title title">About me</h2>
                 <div class="about-me__main">
                     <div class="about-me__my-photo">
                         <img src="./img/nazarbekov.jpg" alt="author photo">
@@ -52,7 +59,7 @@
                 </div>
             </section>
             <section class="contacts" id="contacts">
-                <div class="contacts__title title">Contacts</div>
+                <h2 class="contacts__title title">Contacts</h2>
                 <div class="contacts__main">
                     <ul class="contacts__list">
                         <li>
@@ -74,25 +81,23 @@
                             </a>
                         </li>
                         <li>Messenger:</li>
-                        <ol>
-                            <li>
-                                Telegram: 
-                                <a href="https://t.me/ff4rrell" target="_blank" class="contacts__link">
-                                    ff4rrell
-                                </a>
-                            </li>
-                            <li>
-                                Whatsapp
-                                <a href="https://wa.me/996700771381" target="_blank" class="contacts__link">
-                                    996700771381
-                                </a>
-                            </li>
-                        </ol>
+                        <li>
+                            Telegram: 
+                            <a href="https://t.me/ff4rrell" target="_blank" class="contacts__link">
+                                ff4rrell
+                            </a>
+                        </li>
+                        <li>
+                            Whatsapp
+                            <a href="https://wa.me/996700771381" target="_blank" class="contacts__link">
+                                996700771381
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </section>
             <section class="skills" id="skills">
-                <div class="skills__title title">Skills</div>
+                <h2 class="skills__title title">Skills</h2>
                 <div class="skills__main">
                     <ul class="skills__list">
                         <li>HTML/CSS</li>
@@ -105,25 +110,31 @@
                 </div>
             </section>
             <section class="code-examples" id="code-examples">
-                <div class="code-examples__title title">Code Examples</div>
+                <h2 class="code-examples__title title">Code Examples</h2>
                 <div class="code-examples__main">
-                    <code>
-                        <div>app.post("/check-account/", async (req, res)) => {</div>
-                            <div class="code-examples__main-space">const clientAccount = req.body.account;</div>
-                            <div class="code-examples__main-space">const id = req.query.id;</div>
+                        <div><code>app.post("/check-account/", async (req, res)) => {</code></div>
                             <div class="code-examples__main-space">
-                                const responceFromRequestToMyServer = await requestToMyServer(id, clientAccount);
+                                <code>const clientAccount = req.body.account;</code>
                             </div>
-                            <div class="code-examples__main-space">res.send(responceFromRequestToMyServer);</div>
-                          <div>}</div>
-                    </code>
+                            <div class="code-examples__main-space">
+                                <code>const id = req.query.id;</code>
+                            </div>
+                            <div class="code-examples__main-space">
+                                <code>const responceFromRequestToMyServer = await requestToMyServer(id, clientAccount);</code>
+                            </div>
+                            <div class="code-examples__main-space">
+                                <code>res.send(responceFromRequestToMyServer);</code>
+                            </div>
+                          <div>
+                            <code>}</code>
+                          </div>
                 </div>
             </section>
             <section class="experience" id="experience">
-                <div class="experience__title title">Experience</div>
+                <h2 class="experience__title title">Experience</h2>
                 <div class="experience__main">
-                    <ul class="experience__list">
-                        <li class="experience__list__title">Kyrgys Post - Javascript developer (August 2022 - present)</li>
+                    <div class="experience__list">
+                        <h3 class="experience__list__title">Kyrgys Post - Javascript developer (August 2022 - present)</h3>
                         <div class="experience__list__main">
                             <div class="experience__list__main-position">Position: JavaScript developer</div>
                             <div class="experience__list__main-description">
@@ -138,7 +149,7 @@
                                 </ol>
                             </div>
                         </div>
-                        <li class="experience__list__title">Invescore - It specialist(March 2021 - June 2022)</li>
+                        <h3 class="experience__list__title">Invescore - It specialist(March 2021 - June 2022)</h3>
                         <div class="experience__list__main">
                             <div class="experience__list__main-position">Position: Senior Specialist of the Information Technology Department</div>
                             <div class="experience__list__main-description">
@@ -152,7 +163,7 @@
                                 Working with Active Directory.
                             </div>
                         </div>
-                        <li class="experience__list__title">ISP Aknet - technical support(December 2016 - February 2021)</li>
+                        <h3 class="experience__list__title">ISP Aknet - technical support(December 2016 - February 2021)</h3>
                         <div class="experience__list__main">
                             <div class="experience__list__main-position">Position</div>
                             <div class="experience__list__main-description">
@@ -162,11 +173,11 @@
                                 Working with active network equipment (Cisco).
                             </div>
                         </div>
-                    </ul>
+                    </div>
                 </div>
             </section>
             <section class="education" id="education">
-                <div class="education__title title">Education</div>
+                <h2 class="education__title title">Education</h2>
                 <div class="education__main">
                     <ul class="education__list">
                         <li>Offline courses (CodifyLab) on Javascript programming</li>
@@ -175,9 +186,9 @@
                 </div>
             </section>
             <section class="languages" id="languages">
-                <div class="languages__title title">
+                <h2 class="languages__title title">
                     Languages
-                </div>
+                </h2>
                 <div class="languages__main">
                     <ul class="languages__list">
                         <li>Kyrgyz - Native</li>
@@ -200,5 +211,6 @@
             </div>
         </div>
     </footer>
+    <script src="./scripts.js"></script>
 </body>
 </html>
