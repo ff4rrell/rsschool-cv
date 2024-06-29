@@ -32,3 +32,21 @@
     - Git
     - JSX, React js
 
+# Code example
+```
+
+<div>
+    Hello World!
+</div>
+
+
+```
+
+
+# Eduction 
+  - Kyrgyz State University of Construction, Transport and Architecture, **Information Security**
+
+# Language
+* Kyrgyz - native
+* Russian - fluent
+* English - A1
