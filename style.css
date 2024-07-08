@@ -216,6 +216,37 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 /* contacts end */
 
+
+
+/* experience start */
+
+
+.experience{
+    margin: 10px 0px 0px 0px;
+}
+
+.experience__title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.experience__list{
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    gap: 10px;
+}
+
+.experience__list-title{
+    text-decoration: underline;
+}
+
+.experience__list-job-title{
+    margin: 5px 0px 0px 0px;
+    text-transform: uppercase;
+}
+
+/* experience end */
+
 /* MAIN END */
 
 
