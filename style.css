@@ -61,6 +61,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 		margin: 0 auto;
 	}
 }
+
+.body__items{
+    display: grid;
+    grid-template: 40px 1fr 40px / 1fr;
+    height: 100vh;
+}
 /* CONTAINER END */
 
 
@@ -112,8 +118,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     
 }
 
-
-
 .nav__link::after {
     content: '';
     position: absolute;
@@ -142,7 +146,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .main{}
 
-/* contacs start */
+/* about start */
 
 
 .about{}
@@ -167,7 +171,83 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     width: 100%;
 }
 
-/* contacs end */
+/* about end */
 
+
+
+/* contacts start */
+
+
+.contacts{
+    margin: 20px 0px 10px 0px;
+}
+
+.contacts-title{
+    text-transform: uppercase;
+    margin: 0px 0px 10px 0px;
+}
+
+.contacts-list li{
+    margin: 0px 0px 5px 0px;
+}
+
+.contacts-link{
+    color: #000;
+}
+
+.contacts-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.contacts-link:hover {
+    color: #00f;
+}
+
+.contacts-link:hover::after {
+    background-color: #00f;
+}
+
+/* contacts end */
 
 /* MAIN END */
+
+
+
+
+/* FOOTER START */
+
+
+.footer{
+    height: 40px;
+}
+
+.footer__items{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer__github{}
+
+.footer__github-link img{
+    display: inline-block;
+    width: 40px;
+}
+
+
+.footer__course{}
+
+.footer__course-link img{
+    display: inline-block;
+    width: 40px;
+}
+
+/* FOOTER END */
