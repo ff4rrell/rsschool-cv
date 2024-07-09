@@ -61,4 +61,320 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 		margin: 0 auto;
 	}
 }
+
+.body__items{
+    display: grid;
+    grid-template: 40px 1fr 40px / 1fr;
+    height: 100vh;
+}
 /* CONTAINER END */
+
+
+
+/* HEADER START */
+
+
+.header{
+    margin: 10px 0px 0px 0px;
+    height: 40px;
+}
+
+.header__items{
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr;
+}
+
+.header__icon{}
+
+.h1{
+    text-transform: uppercase;
+
+}
+
+.h1 a{
+    color: #000;
+}
+
+.h1 a:hover{
+    color: blue;
+}
+
+.header__nav{}
+
+.nav{}
+
+.nav__list{
+    display: grid;
+    grid-template: 1fr / repeat(6, 1fr);
+    justify-items: center;
+}
+
+.nav__link{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #000;
+    position: relative;
+    transition: color 0.3s ease;
+    
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.nav__link:hover {
+    color: #00f;
+}
+
+.nav__link:hover::after {
+    background-color: #00f;
+}
+
+
+/* HEADER END */
+
+
+
+/* MAIN START */
+
+.main{}
+
+/* about start */
+
+
+.about{}
+
+.about__title{
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.about__items{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+.about__img{
+    max-width: 200px;
+}
+
+.about__img img{
+    width: 100%;
+}
+
+/* about end */
+
+
+
+/* contacts start */
+
+
+.contacts{
+    margin: 20px 0px 10px 0px;
+}
+
+.contacts-title{
+    text-transform: uppercase;
+    margin: 0px 0px 10px 0px;
+}
+
+.contacts-list li{
+    margin: 0px 0px 5px 0px;
+}
+
+.contacts-link{
+    color: #000;
+}
+
+.contacts-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.contacts-link:hover {
+    color: #00f;
+}
+
+.contacts-link:hover::after {
+    background-color: #00f;
+}
+
+/* contacts end */
+
+
+
+/* experience start */
+
+
+.experience{
+    margin: 10px 0px 0px 0px;
+}
+
+.experience__title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.experience__list{
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    gap: 10px;
+}
+
+.experience__list-title{
+    text-decoration: underline;
+}
+
+.experience__list-job-title{
+    margin: 5px 0px 0px 0px;
+    text-transform: uppercase;
+}
+
+/* experience end */
+
+
+/* skills start */
+
+.skills{
+    margin: 10px 0px 0px 0px;
+}
+
+.skills__title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.skills__list{}
+
+
+.skills__list li {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.skills__list ol {
+    margin-top: 5px;
+}
+
+.skills__list ol li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+
+pre {
+    background-color: gray;
+    padding: 10px;
+    overflow-x: auto;
+
+}
+/* skills end */
+
+/* code-example start */
+
+
+.code-example{
+    margin: 10px 0px 0px 0px;
+}
+
+.code-example__title{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 0px 5px 0px;
+}
+
+/* code-example end */
+
+/* eduction start */
+
+
+.eduction{
+    margin: 10px 0px 0px 0px;
+}
+
+.eduction__title{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 0px 5px 0px;
+}
+
+.eduction__list li{
+    list-style-type: decimal;
+    text-transform: uppercase;
+}
+
+
+/* eduction end */
+
+
+/* language start */
+
+
+.language{
+    margin: 10px 0px 0px 0px;
+}
+
+.language__title{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 0px 5px 0px;
+}
+
+.language__list li{
+    list-style-type: decimal;
+    text-transform: uppercase;
+}
+
+/* language end */
+
+/* MAIN END */
+
+
+
+
+/* FOOTER START */
+
+
+.footer{
+    height: 40px;
+}
+
+.footer__items{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer__github{}
+
+.footer__github-link img{
+    display: inline-block;
+    width: 40px;
+}
+
+
+.footer__course{}
+
+.footer__course-link img{
+    display: inline-block;
+    width: 40px;
+}
+
+/* FOOTER END */
