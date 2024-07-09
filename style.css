@@ -247,6 +247,38 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 /* experience end */
 
+
+/* skills start */
+
+.skills{
+    margin: 10px 0px 0px 0px;
+}
+
+.skills__title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.skills__list{}
+
+
+.skills__list li {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.skills__list ol {
+    margin-top: 5px;
+}
+
+.skills__list ol li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+/* skills end */
+
 /* MAIN END */
 
 
