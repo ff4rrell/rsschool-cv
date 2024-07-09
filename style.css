@@ -286,7 +286,6 @@ pre {
 }
 /* skills end */
 
-
 /* code-example start */
 
 
@@ -301,6 +300,26 @@ pre {
 }
 
 /* code-example end */
+
+/* eduction start */
+
+
+.eduction{
+    margin: 10px 0px 0px 0px;
+}
+
+.eduction__title{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 0px 5px 0px;
+}
+
+.eduction__list li{
+    list-style-type: decimal;
+    text-transform: uppercase;
+}
+
+/* eduction end */
 
 /* MAIN END */
 
