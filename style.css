@@ -319,7 +319,29 @@ pre {
     text-transform: uppercase;
 }
 
+
 /* eduction end */
+
+
+/* language start */
+
+
+.language{
+    margin: 10px 0px 0px 0px;
+}
+
+.language__title{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 0px 5px 0px;
+}
+
+.language__list li{
+    list-style-type: decimal;
+    text-transform: uppercase;
+}
+
+/* language end */
 
 /* MAIN END */
 
